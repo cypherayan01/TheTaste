@@ -1,0 +1,85 @@
+/* sidebar.component.css
+.sidebar {
+    width: 250px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    background-color: #333;
+    padding-top: 20px;
+  }
+  
+  .profile-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid white;
+    margin-bottom: 10px;
+  }
+  
+  .nav-link {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .nav-link:hover {
+    color: yellow;
+  }
+   */
+
+   /* sidebar.component.css */
+.sidebar {
+    width: 250px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    background-color: #333;
+    padding-top: 20px;
+  }
+  
+  .profile-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid white;
+    margin-bottom: 10px;
+  }
+  
+  .nav-link {
+    color: white;
+    text-decoration: none;
+    position: relative;
+    padding: 10px;
+    transition: background-color 0.3s;
+  }
+  
+  .nav-link:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -5px;
+    width: 5px;
+    height: 100%;
+    background-color: transparent;
+    transition: background-color 0.3s;
+  }
+  
+  .nav-link:hover {
+    background-color: yellow; /* Change the background color on hover */
+  }
+  
+  .nav-link:hover:before {
+    background-color: yellow; /* Change the line color on hover */
+  }
+  
+  .nav-link.active {
+    background-color: #444;
+  }
+  
+  .nav-link.active:before {
+    background-color: yellow;
+  }
+  
