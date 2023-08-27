@@ -30,6 +30,7 @@
 
    /* sidebar.component.css */
 .sidebar {
+    margin: 0;
     width: 250px;
     position: fixed;
     top: 0;
@@ -38,6 +39,7 @@
     background-color: #333;
     padding-top: 20px;
   }
+
   
   .profile-image {
     width: 100px;
@@ -54,8 +56,16 @@
     position: relative;
     padding: 10px;
     transition: background-color 0.3s;
+    border-bottom: 1px solid rgba(237, 190, 36, 0.1);
   }
   
+  .nav-link:last-child {
+    border-bottom: none; 
+  }
+  .sidebar-divider {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    margin: 10px 0;
+  }
   .nav-link:before {
     content: '';
     position: absolute;
@@ -68,11 +78,12 @@
   }
   
   .nav-link:hover {
-    background-color: yellow; /* Change the background color on hover */
+    background-color: yellow; 
+    color: #444;
   }
   
   .nav-link:hover:before {
-    background-color: yellow; /* Change the line color on hover */
+    background-color: yellow; 
   }
   
   .nav-link.active {
